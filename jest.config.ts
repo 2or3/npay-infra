@@ -6,6 +6,7 @@ const config: Config.InitialOptions = {
   testMatch: ['**/*.test.ts'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest'
-  }
+  },
+  coverageDirectory: 'docs'
 };
 export default config;
