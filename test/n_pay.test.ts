@@ -1,13 +1,20 @@
-import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
+import { expect as expectCDK, haveResourceLike, countResources } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
 import * as NPay from '../lib/n_pay-stack';
 
-test('Empty Stack', () => {
+test('NPay Stack', () => {
     const app = new cdk.App();
     // WHEN
-    const stack = new NPay.NPayStack(app, 'MyTestStack');
+    const stack = new NPay.NPayStack(app, 'NPayTestStack');
     // THEN
-    expectCDK(stack).to(matchTemplate({
-      "Resources": {}
-    }, MatchStyle.EXACT))
-});
+    expectCDK(stack).to(countResources('AWS::DynamoDB::Table', 1));
+    expectCDK(stack).to(haveResourceLike('AWS::DynamoDB::Table', {
+      AttributeDefinitions: [
+        {
+          'AttributeName': 'UserId',
+          'AttributeType': 'S'
+        }
+      ]
+    }));
+  }
+);
