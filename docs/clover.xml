@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629904356876" clover="3.2.0">
-  <project timestamp="1629904356876" name="All files">
+<coverage generated="1629904872174" clover="3.2.0">
+  <project timestamp="1629904872174" name="All files">
     <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="7" coveredelements="7" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
-    <file name="coin-table-stack.ts" path="/Users/nagashimatsukasa/Documents/NPay/lib/dyanamodb/coin-table-stack.ts">
+    <file name="coin-table-stack.ts" path="/Users/nagashimatsukasa/Documents/NPay/lib/dyanamo-db/coin-table-stack.ts">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
