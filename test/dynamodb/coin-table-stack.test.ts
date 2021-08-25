@@ -1,11 +1,11 @@
 import { expect as expectCDK, haveResourceLike, countResources } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
-import * as NPay from '../../lib/dyanamo-db/coin-table-stack';
+import { CoinTableStack } from '../../lib/dyanamo-db/coin-table-stack';
 
-test('NPay Stack', () => {
+test('Coin Table Stack', () => {
     const app = new cdk.App();
     // WHEN
-    const stack = new NPay.NPayStack(app, 'NPayTestStack');
+    const stack = new CoinTableStack(app, 'CoinTableStack');
     // THEN
     expectCDK(stack).to(countResources('AWS::DynamoDB::Table', 1));
     expectCDK(stack).to(haveResourceLike('AWS::DynamoDB::Table', {
