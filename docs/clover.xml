@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629820461442" clover="3.2.0">
-  <project timestamp="1629820461442" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="10" coveredelements="10" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
-    <file name="n_pay-stack.ts" path="/Users/nagashimatsukasa/Documents/NPay/lib/n_pay-stack.ts">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+<coverage generated="1629904356876" clover="3.2.0">
+  <project timestamp="1629904356876" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="7" coveredelements="7" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+    <file name="coin-table-stack.ts" path="/Users/nagashimatsukasa/Documents/NPay/lib/dyanamodb/coin-table-stack.ts">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
-      <line num="30" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
