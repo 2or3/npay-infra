@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { NPayStack } from '../lib/n_pay-stack';
+import { CoinLambdaStack } from '../lib/lambda/stack/coin-lambda-stack';
 
 const app = new cdk.App();
-new NPayStack(app, 'NPayStack', {
+new CoinLambdaStack(app, 'CoinLambdaStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */

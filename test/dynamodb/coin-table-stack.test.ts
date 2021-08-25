@@ -1,6 +1,6 @@
 import { expect as expectCDK, haveResourceLike, countResources } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
-import * as NPay from '../lib/n_pay-stack';
+import * as NPay from '../../lib/dyanamo-db/coin-table-stack';
 
 test('NPay Stack', () => {
     const app = new cdk.App();
