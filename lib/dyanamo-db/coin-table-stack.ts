@@ -2,7 +2,7 @@ import { Stack, Construct, StackProps } from '@aws-cdk/core';
 import { Table, AttributeType } from '@aws-cdk/aws-dynamodb';
 import { RemovalPolicy } from '@aws-cdk/core';
 
-export class NPayStack extends Stack {
+export class CoinTableStack extends Stack {
   public readonly CoinTable: Table;
 
   constructor(scope: Construct, id: string, props?: StackProps) {

@@ -1,12 +1,12 @@
 import { Stack, Construct, StackProps } from '@aws-cdk/core';
 import { AssetCode, Function, Runtime } from "@aws-cdk/aws-lambda";
-import { NPayStack } from '../../dyanamo-db/coin-table-stack';
+import { CoinTableStack } from '../../dyanamo-db/coin-table-stack';
 
 export class CoinLambdaStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    const dynamodb = new NPayStack(this, "test", {});
+    const dynamodb = new CoinTableStack(this, "CoinTableStack", {});
     const getItemLambda = new Function(this, "getOneItemFunction", {
       code: new AssetCode("lib/lambda/application"),
       handler: "put-coin.handler",
