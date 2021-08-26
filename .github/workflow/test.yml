@@ -1,0 +1,32 @@
+name: 'build-test'
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: install
+        run: |
+          npm install
+      - name: lint
+        run: |
+          npm run lint
+      - name: test
+        run: |
+          npm run test
+      - name: git setting
+        run: |
+          git config --local user.email "t.nagashima.cog@gmail.com"
+          git config --local user.name "2or3"
+      - name: push
+        run: |
+          set +e
+          git add .
+          git commit -m"[Github action] formatted by black" -a
+          git pull
+          git push origin main
