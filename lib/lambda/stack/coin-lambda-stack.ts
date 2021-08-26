@@ -1,5 +1,6 @@
 import { Stack, Construct, StackProps } from '@aws-cdk/core';
-import { AssetCode, Function, Runtime } from "@aws-cdk/aws-lambda";
+import { AssetCode, Function, Runtime } from '@aws-cdk/aws-lambda';
+import { NodejsFunction } from '@aws-cdk/aws-lambda-nodejs'
 import { CoinTableStack } from '../../dyanamo-db/coin-table-stack';
 
 export class CoinLambdaStack extends Stack {
