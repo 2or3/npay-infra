@@ -8,7 +8,7 @@ export class CoinLambdaStack extends Stack {
     super(scope, id, props);
 
     const dynamodb = new CoinTableStack(this, "CoinTableStack", {});
-    const getItemLambda = new Function(this, "getOneItemFunction", {
+    const putCoinLambda = new Function(this, "PutCoinFunction", {
       code: new AssetCode("lib/lambda/application"),
       handler: "put-coin.handler",
       runtime: Runtime.NODEJS_14_X,
@@ -19,6 +19,6 @@ export class CoinLambdaStack extends Stack {
     });
 
     // dynamodb読み取り権限をLambdaに付与
-    dynamodb.CoinTable.grantReadData(getItemLambda);
+    dynamodb.CoinTable.grantReadData(putCoinLambda);
   }
 }
