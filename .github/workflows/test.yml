@@ -34,7 +34,7 @@ jobs:
         run: |
           set +e
           git add .
-          git commit -m"[Github action] formatted by black" -a
+          git commit -m"[Github action] formatted by eslint and jest report" -a
           git pull
           git push origin main
   deploy:
