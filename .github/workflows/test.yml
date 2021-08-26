@@ -57,7 +57,7 @@ jobs:
           npm run build
       - name: cdk bootstrap
         run: |
-          cdk bootstrap aws://${{ secrets.AWS_ACCOUNT }}/${{ secrets.AWS_DEFAULT_REGION }}
+          npx cdk bootstrap aws://${{ secrets.AWS_ACCOUNT }}/${{ secrets.AWS_DEFAULT_REGION }}
       - name: deploy
         run: |
           npm run deploy
