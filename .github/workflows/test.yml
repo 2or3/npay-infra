@@ -10,6 +10,12 @@ jobs:
         node-version: [14.x]
     steps:
       - uses: actions/checkout@v2
+      - name: install eslint
+        run: |
+          npm install -g eslint
+      - name: install jest
+        run: |
+          npm install -g jest
       - name: install
         run: |
           npm install
