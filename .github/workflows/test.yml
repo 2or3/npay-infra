@@ -4,6 +4,7 @@ on:
 
 jobs:
   test:
+    name: run test as jest
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -36,3 +37,28 @@ jobs:
           git commit -m"[Github action] formatted by black" -a
           git pull
           git push origin main
+  deploy:
+    name: deploy as cdk
+    needs: test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - uses: actions/checkout@v2
+      - name: install typescript
+        run: |
+          npm install -g typescript
+      - name: install
+        run: |
+          npm install
+      - name: build
+        run: |
+          npm run build
+      - name: deploy
+        run: |
+          npm run deploy
+        env:
+          AWS_DEFAULT_REGION: 'ap-northeast-1'
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
