@@ -18,6 +18,6 @@ export class CoinLambdaStack extends Stack {
     });
 
     // dynamodb読み取り権限をLambdaに付与
-    dynamodb.CoinTable.grantReadData(put_coin_lambda);
+    dynamodb.CoinTable.grantReadWriteData(put_coin_lambda);
   }
 }
