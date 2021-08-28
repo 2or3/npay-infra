@@ -10,7 +10,7 @@ test('Coin Lambda Stack', () => {
   expectCDK(stack).to(countResources('AWS::Lambda::Function', 1));
   expectCDK(stack).to(haveResourceLike('AWS::Lambda::Function',
     {
-      Handler: 'put-coin.handler',
+      Handler: 'index.handler',
       Runtime: 'nodejs14.x'
     }
   ));

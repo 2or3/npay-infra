@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1629994781145" clover="3.2.0">
-  <project timestamp="1629994781145" name="All files">
-    <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="16" coveredelements="16" complexity="0" loc="14" ncloc="14" packages="2" files="2" classes="2"/>
+<coverage generated="1630162108009" clover="3.2.0">
+  <project timestamp="1630162108009" name="All files">
+    <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="17" coveredelements="17" complexity="0" loc="15" ncloc="15" packages="2" files="2" classes="2"/>
     <package name="dyanamo-db">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="coin-table-stack.ts" path="/home/runner/work/NPay/NPay/lib/dyanamo-db/coin-table-stack.ts">
+      <file name="coin-table-stack.ts" path="/Users/nagashimatsukasa/Documents/NPay/lib/dyanamo-db/coin-table-stack.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -15,17 +15,18 @@
       </file>
     </package>
     <package name="lambda.stack">
-      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="coin-lambda-stack.ts" path="/home/runner/work/NPay/NPay/lib/lambda/stack/coin-lambda-stack.ts">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="coin-lambda-stack.ts" path="/Users/nagashimatsukasa/Documents/NPay/lib/lambda/stack/coin-lambda-stack.ts">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
       </file>
     </package>
   </project>
