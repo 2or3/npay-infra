@@ -14,13 +14,15 @@ export const handler = async (event: any = {}): Promise<any> => {
 
   const params = {
     TableName: TABLE_NAME,
-    Key: {
-      [PRIMARY_KEY]: requestedItemId,
+    Item: {
+      requestedItemId: {
+        S: "testdata"
+      }
     },
   };
 
   try {
-    const response = await dynamodb.get(params).promise();
+    const response = await dynamodb.putItem(params).promise();
     return { statusCode: 200, body: JSON.stringify(response.Item) };
   } catch (dbError) {
     return { statusCode: 500, body: JSON.stringify(dbError) };
