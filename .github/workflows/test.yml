@@ -46,15 +46,9 @@ jobs:
         node-version: [14.x]
     steps:
       - uses: actions/checkout@v2
-      - name: install typescript
-        run: |
-          npm install -g typescript
       - name: install
         run: |
           npm install
-      - name: build
-        run: |
-          npm run build
       - name: cdk bootstrap
         run: |
           npx cdk bootstrap aws://${{ secrets.AWS_ACCOUNT }}/${{ secrets.AWS_DEFAULT_REGION }}
