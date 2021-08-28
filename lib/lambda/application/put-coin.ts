@@ -15,7 +15,7 @@ export const handler = async (event: any = {}): Promise<any> => {
   const params = {
     TableName: TABLE_NAME,
     Item: {
-      requestedItemId: {
+      'UserId': {
         S: "testdata"
       }
     },
