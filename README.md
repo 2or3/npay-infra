@@ -1,4 +1,4 @@
-# Welcome to your CDK TypeScript project!
+# NPay project!
 
 This is a blank project for TypeScript development with CDK.
 
