@@ -23,10 +23,10 @@ export const handler = async (event: any = {}): Promise<any> => {
     TableName: TABLE_NAME,
     Item: {
       'UserId': {
-        S: requestedUserId
+        N: requestedUserId
       },
       'CoinAmount': {
-        S: requestedCoin
+        N: requestedCoin
       }
     },
   };
