@@ -1,11 +1,18 @@
 const AWS = require('aws-sdk');
-const dynamodb = new AWS.DynamoDB.DocumentClient();
+const dynamodb = new AWS.DynamoDB;
 const TABLE_NAME = process.env.TABLE_NAME || '';
 const PRIMARY_KEY = process.env.PRIMARY_KEY || '';
 
 export const handler = async (event: any = {}): Promise<any> => {
-  const requestedItemId = event.pathParameters.id;
-  if (!requestedItemId) {
+  const requestedUserId = event.parameters.userId;
+  const requestedCoin = event.parameters.coinCharge;
+  if (!requestedUserId) {
+    return {
+      statusCode: 400,
+      body: `Error: You are missing the path parameter id`,
+    };
+  }
+  if (!requestedCoin) {
     return {
       statusCode: 400,
       body: `Error: You are missing the path parameter id`,
@@ -16,7 +23,10 @@ export const handler = async (event: any = {}): Promise<any> => {
     TableName: TABLE_NAME,
     Item: {
       'UserId': {
-        S: "testdata"
+        S: requestedUserId
+      },
+      'CoinAmount': {
+        S: requestedCoin
       }
     },
   };
