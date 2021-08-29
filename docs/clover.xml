@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1630246149410" clover="3.2.0">
-  <project timestamp="1630246149410" name="All files">
-    <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="17" coveredelements="17" complexity="0" loc="15" ncloc="15" packages="2" files="2" classes="2"/>
+<coverage generated="1630249686947" clover="3.2.0">
+  <project timestamp="1630249686947" name="All files">
+    <metrics statements="31" coveredstatements="28" conditionals="9" coveredconditionals="6" methods="3" coveredmethods="3" elements="43" coveredelements="37" complexity="0" loc="31" ncloc="31" packages="3" files="3" classes="3"/>
     <package name="dyanamo-db">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="coin-table-stack.ts" path="/home/runner/work/NPay/NPay/lib/dyanamo-db/coin-table-stack.ts">
+      <file name="coin-table-stack.ts" path="/Users/nagashimatsukasa/Documents/NPay/lib/dyanamo-db/coin-table-stack.ts">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
@@ -14,9 +14,31 @@
         <line num="12" count="2" type="stmt"/>
       </file>
     </package>
+    <package name="lambda.application">
+      <metrics statements="16" coveredstatements="13" conditionals="9" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <file name="put-coin.ts" path="/Users/nagashimatsukasa/Documents/NPay/lib/lambda/application/put-coin.ts">
+        <metrics statements="16" coveredstatements="13" conditionals="9" coveredconditionals="6" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+      </file>
+    </package>
     <package name="lambda.stack">
       <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="coin-lambda-stack.ts" path="/home/runner/work/NPay/NPay/lib/lambda/stack/coin-lambda-stack.ts">
+      <file name="coin-lambda-stack.ts" path="/Users/nagashimatsukasa/Documents/NPay/lib/lambda/stack/coin-lambda-stack.ts">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
