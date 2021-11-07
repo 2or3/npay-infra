@@ -1,3 +1,5 @@
+[![build-test](https://github.com/2or3/NPay/actions/workflows/test.yml/badge.svg)](https://github.com/2or3/NPay/actions/workflows/test.yml)
+
 # NPay project!
 
 This is a blank project for TypeScript development with CDK.
