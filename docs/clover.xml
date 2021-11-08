@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636382919474" clover="3.2.0">
-  <project timestamp="1636382919474" name="All files">
+<coverage generated="1636383601127" clover="3.2.0">
+  <project timestamp="1636383601127" name="All files">
     <metrics statements="31" coveredstatements="28" conditionals="9" coveredconditionals="6" methods="3" coveredmethods="3" elements="43" coveredelements="37" complexity="0" loc="31" ncloc="31" packages="3" files="3" classes="3"/>
     <package name="dyanamo-db">
       <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
