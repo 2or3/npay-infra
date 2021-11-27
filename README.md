@@ -2,10 +2,6 @@
 
 # NPay project!
 
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
 ## Useful commands
 
 * `npm run build`   compile typescript to js
