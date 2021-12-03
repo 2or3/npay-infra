@@ -13,7 +13,7 @@
     "deploy": "npx cdk deploy --require-approval never --all"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.120.0",
+    "@aws-cdk/assert": "2.0.0",
     "@types/jest": "^27.0.3",
     "@types/node": "16.11.11",
     "aws-cdk": "2.0.0",
