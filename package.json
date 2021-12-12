@@ -25,9 +25,9 @@
     "set-value": ">=4.0.1"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.120.0",
+    "@aws-cdk/aws-apigateway": "^1.134.0",
     "@aws-cdk/aws-dynamodb": "^1.134.0",
-    "@aws-cdk/aws-lambda": "^1.134.0",
+    "@aws-cdk/aws-lambda": "^1.135.0",
     "@aws-cdk/aws-lambda-nodejs": "^1.134.0",
     "@aws-cdk/core": "1.134.0",
     "source-map-support": "^0.5.21"
