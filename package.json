@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@aws-cdk/aws-apigateway": "^1.134.0",
-    "@aws-cdk/aws-dynamodb": "^1.134.0",
+    "@aws-cdk/aws-dynamodb": "^1.136.0",
     "@aws-cdk/aws-lambda": "^1.136.0",
     "@aws-cdk/aws-lambda-nodejs": "^1.134.0",
     "@aws-cdk/core": "1.134.0",
