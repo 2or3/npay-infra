@@ -13,22 +13,23 @@
     "deploy": "npx cdk deploy --require-approval never --all"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "1.120.0",
-    "@types/jest": "^27.0.1",
-    "@types/node": "16.7.2",
-    "aws-cdk": "1.120.0",
-    "jest": "^26.4.2",
-    "ts-jest": "^26.2.0",
-    "ts-node": "^10.2.1",
-    "aws-sdk": "^2.978.0",
-    "typescript": "~4.4.2"
+    "@aws-cdk/assert": "2.3.0",
+    "@types/jest": "^27.0.3",
+    "@types/node": "16.11.11",
+    "aws-cdk": "2.3.0",
+    "jest": "^27.4.5",
+    "ts-jest": "^27.1.2",
+    "ts-node": "^10.4.0",
+    "aws-sdk": "^2.1048.0",
+    "typescript": "~4.5.4",
+    "set-value": ">=4.0.1"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.120.0",
-    "@aws-cdk/aws-dynamodb": "^1.120.0",
-    "@aws-cdk/aws-lambda": "^1.120.0",
-    "@aws-cdk/aws-lambda-nodejs": "^1.120.0",
-    "@aws-cdk/core": "1.120.0",
-    "source-map-support": "^0.5.16"
+    "@aws-cdk/aws-apigateway": "^1.137.0",
+    "@aws-cdk/aws-dynamodb": "^1.137.0",
+    "@aws-cdk/aws-lambda": "^1.136.0",
+    "@aws-cdk/aws-lambda-nodejs": "^1.137.0",
+    "@aws-cdk/core": "1.137.0",
+    "source-map-support": "^0.5.21"
   }
 }

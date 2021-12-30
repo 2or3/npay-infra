@@ -26,17 +26,23 @@ jobs:
       - name: test
         run: |
           npm run test
+      - name: Extract branch name
+        shell: bash
+        run: echo "::set-output name=branch::${GITHUB_REF#refs/heads/}"
+        id: extract_branch
       - name: git setting
         run: |
           git config --local user.email "t.nagashima.cog@gmail.com"
           git config --local user.name "2or3"
       - name: push
+        env:
+          BRANCH_NAME: ${{ steps.extract_branch.outputs.branch }}
         run: |
           set +e
           git add .
           git commit -m"[Github action] formatted by eslint and jest report" -a
-          git pull
-          git push origin main
+          git pull origin $BRANCH_NAME
+          git push origin $BRANCH_NAME
   deploy:
     name: deploy as cdk
     needs: test
