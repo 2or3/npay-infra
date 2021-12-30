@@ -1,26 +1,13 @@
-import { DynamoDB } from "aws-sdk";
-import { mocked } from "ts-jest/utils";
+const AWS = require('aws-sdk');
 
 import { handler } from "../../../lib/lambda/application/put-coin";
 
-jest.mock("aws-sdk");
-
 test('put coin handler', async () => {
     const data = {
-        response: {
-            Item: "test"
-        }
+        'statusCode': 200
     };
-    mocked(DynamoDB).mockImplementationOnce((): any => {
-        return {
-            putItem: (_param: any, callback: any) => {
-                return {
-                    promise: () => {
-                        return data;
-                    },
-                };
-            },
-        };
+    jest.spyOn(AWS.DynamoDB.DocumentClient.prototype, 'put').mockImplementationOnce((): any => {
+        return data;
     });
 
     const result = await handler({
@@ -29,4 +16,5 @@ test('put coin handler', async () => {
             coinCharge: 300
         }
     });
+    console.log(result);
 });

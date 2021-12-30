@@ -1,7 +1,6 @@
 const AWS = require('aws-sdk');
 const dynamodb = new AWS.DynamoDB;
 const TABLE_NAME = process.env.TABLE_NAME || '';
-const PRIMARY_KEY = process.env.PRIMARY_KEY || '';
 
 export const handler = async (event: any = {}): Promise<any> => {
   const requestedUserId = event.parameters.userId;
