@@ -7,7 +7,7 @@ test('Coin Table Stack', () => {
   // WHEN
   const stack = new CoinTableStack(app, 'CoinTableStack');
   // THEN
-  // expectCDK(stack).to(countResources('AWS::DynamoDB::Table', 1));
+  expectCDK(stack).to(countResources('AWS::DynamoDB::Table', 1));
   expectCDK(stack).to(haveResourceLike('AWS::DynamoDB::Table',
     {
       AttributeDefinitions: [

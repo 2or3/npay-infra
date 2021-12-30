@@ -9,7 +9,7 @@ export class CoinTableStack extends Stack {
     super(scope, id, props);
 
     // DynamoDB for coin api
-    new Table(this, 'NCoinTable', {
+    this.CoinTable = new Table(this, 'NCoinTable', {
       partitionKey: {
         name: 'UserId',
         type: AttributeType.STRING
