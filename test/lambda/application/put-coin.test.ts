@@ -16,5 +16,4 @@ test('put coin handler', async () => {
             coinCharge: 300
         }
     });
-    console.log(result);
 });
