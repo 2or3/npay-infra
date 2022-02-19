@@ -1,6 +1,6 @@
 [![build-test](https://github.com/2or3/NPay/actions/workflows/test.yml/badge.svg)](https://github.com/2or3/NPay/actions/workflows/test.yml)
 
-# NPay project!
+# NPay project!!
 
 ## Useful commands
 
