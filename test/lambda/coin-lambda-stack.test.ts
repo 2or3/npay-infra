@@ -1,9 +1,9 @@
-import { expect as expectCDK, haveResourceLike, countResources } from '@aws-cdk/assert';
-import * as cdk from '@aws-cdk/core';
 import { CoinLambdaStack } from '../../lib/lambda/stack/coin-lambda-stack';
+import { Construct } from 'constructs';
+import { App }from 'aws-cdk-lib';
 
 test('Coin Lambda Stack', () => {
-  const app = new cdk.App();
+  const app = new App();
   // WHEN
   const stack = new CoinLambdaStack(app, 'CoinLambdaStack');
   // THEN

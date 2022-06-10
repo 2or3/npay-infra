@@ -1,6 +1,11 @@
-import { Stack, Construct, StackProps } from '@aws-cdk/core';
-import { Table, AttributeType } from '@aws-cdk/aws-dynamodb';
-import { RemovalPolicy } from '@aws-cdk/core';
+import { Table, AttributeType } from 'aws-cdk-lib/aws-dynamodb';
+
+import { Construct } from 'constructs';
+import {
+  Stack,
+  StackProps,
+  RemovalPolicy
+}from 'aws-cdk-lib';
 
 export class CoinTableStack extends Stack {
   public readonly CoinTable: Table;

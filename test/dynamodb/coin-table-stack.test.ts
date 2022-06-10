@@ -1,6 +1,6 @@
-import { expect as expectCDK, haveResourceLike, countResources } from '@aws-cdk/assert';
-import * as cdk from '@aws-cdk/core';
 import { CoinTableStack } from '../../lib/dyanamo-db/coin-table-stack';
+import { Construct } from 'constructs';
+import { App }from 'aws-cdk-lib';
 
 test('Coin Table Stack', () => {
   const app = new cdk.App();
