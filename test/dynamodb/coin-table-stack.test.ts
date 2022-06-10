@@ -3,7 +3,7 @@ import { Construct } from 'constructs';
 import { App }from 'aws-cdk-lib';
 
 test('Coin Table Stack', () => {
-  const app = new cdk.App();
+  const app = new App();
   // WHEN
   const stack = new CoinTableStack(app, 'CoinTableStack');
   // THEN
