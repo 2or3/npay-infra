@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1654876745567" clover="3.2.0">
-  <project timestamp="1654876745567" name="All files">
+<coverage generated="1655217483306" clover="3.2.0">
+  <project timestamp="1655217483306" name="All files">
     <metrics statements="29" coveredstatements="26" conditionals="5" coveredconditionals="2" methods="3" coveredmethods="3" elements="37" coveredelements="31" complexity="0" loc="29" ncloc="29" packages="3" files="3" classes="3"/>
     <package name="dyanamo-db">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="coin-table-stack.ts" path="/home/runner/work/NPay/NPay/lib/dyanamo-db/coin-table-stack.ts">
+      <file name="coin-table-stack.ts" path="/home/runner/work/npay-infra/npay-infra/lib/dyanamo-db/coin-table-stack.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
@@ -15,7 +15,7 @@
     </package>
     <package name="lambda.application">
       <metrics statements="15" coveredstatements="12" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <file name="put-coin.ts" path="/home/runner/work/NPay/NPay/lib/lambda/application/put-coin.ts">
+      <file name="put-coin.ts" path="/home/runner/work/npay-infra/npay-infra/lib/lambda/application/put-coin.ts">
         <metrics statements="15" coveredstatements="12" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -36,7 +36,7 @@
     </package>
     <package name="lambda.stack">
       <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="coin-lambda-stack.ts" path="/home/runner/work/NPay/NPay/lib/lambda/stack/coin-lambda-stack.ts">
+      <file name="coin-lambda-stack.ts" path="/home/runner/work/npay-infra/npay-infra/lib/lambda/stack/coin-lambda-stack.ts">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
