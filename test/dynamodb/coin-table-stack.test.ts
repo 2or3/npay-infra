@@ -1,4 +1,4 @@
-import { CoinTableStack } from '../../lib/dyanamo-db/coin-table-stack';
+import { CoinTableStack } from '../../lib/dynamo-db/coin-table-stack';
 import { Construct } from 'constructs';
 import { App }from 'aws-cdk-lib';
 
