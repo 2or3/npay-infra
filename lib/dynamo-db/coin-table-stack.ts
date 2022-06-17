@@ -19,7 +19,8 @@ export class CoinTableStack extends Stack {
         name: 'UserId',
         type: AttributeType.STRING
       },
-      removalPolicy: RemovalPolicy.DESTROY
+      removalPolicy: RemovalPolicy.DESTROY,
+      tableName: "NCoin"
     });
   }
 }
