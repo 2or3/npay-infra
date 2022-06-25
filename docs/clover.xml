@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1655482628945" clover="3.2.0">
-  <project timestamp="1655482628945" name="All files">
+<coverage generated="1656119527707" clover="3.2.0">
+  <project timestamp="1656119527707" name="All files">
     <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="6" coveredelements="6" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
     <file name="coin-table-stack.ts" path="/home/runner/work/npay-infra/npay-infra/lib/dynamo-db/coin-table-stack.ts">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
