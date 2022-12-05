@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "aws-cdk-lib": "^2.29.1",
-    "constructs": "^10.1.94",
+    "constructs": "^10.1.180",
     "@types/jest": "^27.5.0",
     "@types/node": "18.8.2",
     "aws-cdk": "2.44.0",
@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.29.1",
-    "constructs": "^10.1.94",
+    "constructs": "^10.1.180",
     "source-map-support": "^0.5.21",
     "vm2": ">=3.9.11",
     "uuid": "9.0.0"
